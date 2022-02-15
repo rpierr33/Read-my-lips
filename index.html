@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read My Lips</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.css" />
+    <script src="https://kit.fontawesome.com/e0e53f9924.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div id="timerEl" class="header hide">90 seconds remaining</div>
+    </header>
+    
+    <main id="mainElGroup"class="columns is-mobile main margin-fix">
+        <div class="column fakeDiv"></div>
+        <!--the real body-->
+        <!--Front page Elements begin-->
+        <div class="column title-container is-8 margin-fix">
+            <div id="instructions">
+                <div class="columns is-mobile title-container first-page-el-style margin-fix">
+                    <div class="column is-7 margin-fix">
+                        <h1 class="titles">Read My Lips</h1>
+                    </div>
+                    <div class="column is-3 title-img margin-fix">
+                        <img src="./assets/images/mouth-312558_1280.png" alt="mouth with tounge sticking out">
+                    </div>
+                </div>
+                <div class=" title-container first-page-el-style margin-fix">
+                    <div class="rules">
+                        <h2 class="rules">The Party Game of Unspoken Words!</h2>
+
+                        <p class="rules">Read each post without making a sound while your friends take turns reading
+                            your lips and guessing what the post says.</p>
+
+                        <p class="rules">Whoever guesses the most phrases correctly before time runs out wins!</p>
+                    </div>
+                </div>
+                <div class="buttonContainer margin-fix">
+                    <button type="button" class="buttonClass" id="begin-btn">Click To Begin</button>
+                </div>
+                <div class="bText">
+                    <p id="viewHighbtn" class="viewhightext">View HighScores</p>
+                </div>
+            </div>
+        <!--Front page elements End-->
+        <!--Choose posts-->
+        <div class="tile is-ancestor cardContainer hide" id="jokeParentEl">
+          <div class="tile hover is-vertical is-6" id= "getJoke">
+              <div class="tile newcolor">
+                  <div class="tile is-parent is-vertical">
+                      <article class="tile is-child">
+                          <figure class="image is-2by1">
+                              <img class=" img social-pic"
+                                  src="./assets/images/mask-4972661_1280.png"/>
+                          </figure>
+                          <p class="center-text" style='margin-top: 30%;'>Use random Dad Jokes <br>
+                              by the Offical Joke API!!</p>
+                          <p class="title center-text circle" style="margin: 50% auto 0 auto;">GO!</p>
+                      </article>
+                  </div>
+              </div>
+          </div>
+          <div class="tile hover is-vertical is-6" id="giphy"> 
+              <div class="tile newcolor2">
+                  <div class="tile is-parent is-vertical">
+                      <article class="tile is-child">
+                          <figure class="image is-2by1">
+                              <img class="img twitter-pic"
+                                  src="./assets/images/Giphy Icon Circle 720 px.png"/>
+                          </figure>
+                          <p class="center-text" style='margin-top: 30%;'>Use random giphs <br>
+                              from giphy!!</p>
+                          <p class="title center-text circle" style="margin: 50% auto 0 auto;">GO!</p>
+                      </article>
+                  </div>
+              </div>
+          </div>
+        </div>
+      <!-- Chose Posts end-->
+        
+        <!-- game-page -->
+        <div class="box border column margin-fix hide" id="gamePageParEl">
+            <p class="title titles psps bText" id="question"></p>
+            <p class="subtitle psps bText" id="answer"></p>
+          <div class="columns margin-fix">
+
+
+            <div class="column margin-fix"><a class="button gameButton is-large fas fa-check" id="correctbutton"></a></div>
+            <div class="column margin-fix"><a class="button gameButton is-large fas fa-forward" id="wrongbutton"></a></div>
+          </div>
+        </div>
+        <!-- game-page  -->
+
+            <!-- Times up elements begin -->
+            <div id="timesUpEls" class="hide">
+                <div>
+                    <h3 class="timesUp">Time's Up!</h3>
+                </div>
+                <div>
+                    <h4 id="finalScoreDisplay" class="bText">Your Final Score is:</h4>
+                    <div class="">
+                        <label for="your score"></label>
+                    </div>
+                    <div>
+                        <h4 class="bText">Enter Initals:</h4>
+                    </div>
+                    <label for="your initals"></label>
+                    <input for="letters" placeholder="Initals" id="highScoreSubmit" name="initals" class="form-input bText" />
+                </div>
+
+                <div class="container">
+                    <button id='submitScoreBtn'class="buttonClass">Submit</button>
+                </div>
+            </div>
+        </div>
+        <!--Times up elements end-->
+        </div>
+
+        <!--The Real Body End-->
+        <div class="column fakeDiv"></div>
+    </main>
+    <!--HighScore Elements Begin-->
+    <div id="highScoreElGroup"class="hide">
+        <div class="has-text-weight-bold">
+            <h5 id="backToStart" class="viewhightext"> &lt; Back to Start</h3>
+        </div>
+        <div class="has-text-centered is-size-1">
+            <h6 class="highScoreTitle">High Scores</h1>
+        </div>
+        <hr>
+        <ul id="highScores" class="names is-size-4">
+        </ul>
+    </div>
+    <!--HighScore Elements End-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

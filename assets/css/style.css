@@ -1,0 +1,342 @@
+
+/* root of colors scheme */
+:root {
+  --primary-blue: rgba(23, 120, 245, 1);
+  --primary-blue2: rgba(23, 120, 245, .75);
+  --facebook-blue: rgba(24, 119, 242, 1);
+  --twitter-blue: rgba(29, 155, 240, 1);
+  --white: #FFFFFF;
+}
+
+/* screen box size for website */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  color: var(--white);
+}
+
+.margin-fix {
+  margin: 0px;
+}
+
+/* front page starts here */
+
+/* header for centering text, size and color */
+
+.header {
+  text-align: center;
+  font-size: xx-large;
+  margin: 1% 0;
+  background-color: var(--white);
+  color: black;
+}
+
+.main {
+  margin: 1% 0;
+  width: 100%;
+  min-width: 000px;
+  align-self: center;
+}
+
+/* color scheme and border-radio */
+
+.first-page-el-style {
+  background-color: var(--primary-blue);
+  border-radius: 50px;
+}
+
+/* front page to align and center content */
+.title-container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 450px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+/* universal scheme for front and gamepage */
+.titles {
+  font-size: 5vw;
+  color: var(--white);
+}
+
+/* texts style for front page paragraph */
+.rules {
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+  font-size: 2.5vw;
+}
+
+/* background white */
+.white {
+  background-color: #FFFFFF;
+}
+
+/* style for buttons */
+.buttonClass {
+  border-radius: 50px;
+  background-color: var(--primary-blue);
+  padding: 10px 30px;
+  font-size: 3vw;
+  margin: 10px;
+}
+
+/* button hover */
+.buttonClass:hover {
+  background-color: var(--primary-blue2)
+}
+
+/* front page ends here */
+
+/* Times Up css Begin*/
+.timesUp {
+  font-size: 3vw;
+  color: rgba(23, 120, 245, 1);
+}
+
+.btn:hover{
+  background-color: rgba(23, 120, 245, .5);
+}
+/* Times up css end*/
+
+/* game-page styles begin */
+.psps {
+  text-align: center;
+}
+
+.box {
+  border: 5px solid rgba(23, 120, 245, 1);
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.gameButton {
+  width: 100%;
+  background-color:rgba(23, 120, 245, 1);
+  color: white;
+  border-radius: 50px;
+}
+
+.button:hover {
+  background-color: rgba(23, 120, 245, 1);
+}
+/* game-page styles end */
+
+/* choose styles begin*/
+
+/* getjoke api pic */
+.social-pic {
+  margin: auto !important;
+  width: 35% !important;
+  height: 77% !important;
+}
+
+/* giphy pic */
+.twitter-pic {
+  margin: auto !important;
+  width: 37% !important;
+  height: 72% !important;
+}
+
+/* text center */
+.center-text {
+  text-align: center !important;
+  padding-top: 20px;
+  color: white;
+  font-size: 2.3vw;
+}
+
+.hover {
+  transition: transform .2s;
+} 
+
+.hover:hover {
+  transform: scale(1.05);
+}
+
+/* text style for the game selection  */
+
+.block {
+  display: block !important;
+}
+
+.maxheight {
+  height: 100% !important;
+}
+
+.top-container {
+  height:500px !important;
+  width: 43%!important
+}
+
+.circle {
+  border: 3px solid white;
+  height: 80px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 80px;
+  position: relative;
+}
+
+.img {
+  border:3px solid white;    
+  height:100px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:100px;
+  position: relative;
+}
+
+.newcolor {
+  background-color: rgba(24, 119, 242, 1)!important;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.newcolor2 {
+  background-color: rgba(29, 155, 240, 1)!important;
+  border-radius: 25px;
+  margin: 10px;
+}
+/* choose styles end */
+
+/* highscore styles start */
+.backToStart {
+  color: rgba(23, 120, 245, 1);
+  font-weight: bold ;
+}
+
+.highScoreTitle {
+  color: rgba(23, 120, 245, 1);
+}
+
+hr, .names {
+  display: block;
+  width: 60%;
+  height: 8px;
+  background-color: rgba(23, 120, 245, 1);
+  margin:auto
+}
+
+.scorebox {
+  color: rgba(23, 120, 245, 1);
+  position: absolute;
+  right:80% ;
+  left:20%;
+}
+
+.score {
+  color: rgba(23, 120, 245, 1);
+  position: relative;
+  right: 30%;
+  left: 70%;
+}
+
+.names {
+  position: absolute;
+  font-weight: bold;
+  right: 70%;
+  left:20% ;
+}
+
+.bText {
+  color: black;
+  font-size: 2.5vw;
+}
+
+.viewhightext {
+  color: black;
+  font-size: 2.5vw;
+  text-decoration: underline;
+}
+
+.viewhightext:hover {
+  color: blue
+}
+
+/* highscore styles end */
+
+.hide {
+  display: none !important;
+}
+
+/* mobile responseive queries */
+
+/* mobile queries for screen sizies for 900px */
+@media only screen and (max-width: 900px) {
+
+  .header {
+    font-size: 6vw;
+  }
+
+  .titles {
+    font-size: 5vw;
+  }
+
+  .rules {
+    font-size: 3.5vw;
+  }
+
+  .timesUp {
+    font-size: 5vw;
+  }
+
+  .bText {
+    font-size: 3.5vw;
+  }
+
+  .viewhightext {
+    font-size: 3.5vw;
+  }
+
+  .buttonClass {
+    font-size: 4vw;
+  }
+
+  .center-text {
+    font-size: 4vw;
+  }
+}
+
+/* mobile queries for screen sizies for 450px */
+@media only screen and (max-width: 500px) {
+
+  .header {
+    font-size: 5vw;
+  }
+
+  .titles {
+    font-size: 7vw;
+  }
+
+  .rules {
+    font-size: 5vw;
+  }
+
+  .timesUp {
+    font-size: 7vw;
+  }
+
+  .bText {
+    font-size: 5vw;
+  }
+
+  .viewhightext {
+    font-size: 5vw;
+  }
+
+  .buttonClass {
+    font-size: 6vw;
+  }
+
+  .center-text {
+    font-size: 5vw;
+  }
+}  
